@@ -1,0 +1,95 @@
+/* Separate coffee-palette experiment. The original website is unchanged. */
+:root {
+  --story-cup-shadow: #00000040;
+  --espresso-black: #1B0404;
+  --dark-roast: #360E0A;
+  --roasted-bean: #532416;
+  --deep-coffee-brown: #703922;
+  --coffee-brown: #885137;
+  --caramel-brown: #A36D4F;
+  --toasted-tan: #BE8B6B;
+  --light-roast: #DCB192;
+
+  /* Slightly brighter warm shades for text, keeping the coffee surfaces. */
+  --text-primary: #EED6C2;
+  --text-secondary: #DAB494;
+  --text-highlight: #E5BF9F;
+
+  /* Existing component tokens take their colors from this trial palette. */
+  --wine: var(--text-primary);
+  --dark: var(--text-primary);
+  --cream: var(--espresso-black);
+  --muted: var(--text-secondary);
+  --line: var(--coffee-brown);
+  --sand: var(--roasted-bean);
+  color-scheme: dark;
+}
+
+::selection { background: var(--toasted-tan); color: var(--espresso-black); }
+:focus-visible, input:focus, textarea:focus { outline-color: var(--toasted-tan); }
+em { color: var(--text-highlight); }
+.site-header { color: var(--text-primary); border-bottom-color: #88513766; }
+.bag { border-color: #BE8B6B99; }
+.bag b { background: var(--light-roast); color: var(--espresso-black); }
+.hero { color: var(--text-primary); }
+.hero-shade { background: linear-gradient(270deg, #1B0404e8 0%, #1B040470 56%, #1B04041a 100%); }
+.overline span { background: var(--caramel-brown); }
+.hero em { color: var(--text-highlight); }
+.hero-copy p { color: var(--text-primary); }
+.hero-bottom { color: var(--text-secondary); border-top-color: #88513780; }
+.image-credit { color: #DAB494bf; }
+
+.light, .burgundy { background: var(--light-roast); color: var(--espresso-black); }
+.light:hover:not(:disabled), .burgundy:hover:not(:disabled) { background: var(--toasted-tan); color: var(--espresso-black); }
+.outline { border-color: var(--caramel-brown); color: var(--text-primary); }
+.outline:hover:not(:disabled) { background: var(--roasted-bean); }
+.ribbon { background: var(--roasted-bean); color: var(--text-primary); }
+.ribbon i { color: var(--caramel-brown); }
+.section-no, .eyebrow, .coffee-mark { color: var(--text-secondary); }
+
+.menu-section { background: var(--dark-roast); }
+.search { background: var(--espresso-black); border-color: var(--caramel-brown); }
+.search:focus-within { outline-color: var(--toasted-tan); }
+input::placeholder, textarea::placeholder { color: var(--text-secondary); opacity: 1; }
+.tabs { border-bottom-color: var(--coffee-brown); }
+.tabs button { border-color: var(--caramel-brown); color: var(--text-primary); }
+.tabs button.selected { background: var(--light-roast); border-color: var(--light-roast); color: var(--espresso-black); }
+.product-number { color: var(--text-primary); text-shadow: 0 1px 5px var(--espresso-black); }
+.image-arrow { background: var(--light-roast); color: var(--espresso-black); }
+.plus { border-color: var(--caramel-brown); }
+.badge { background: var(--light-roast); color: var(--espresso-black); }
+
+.delivery-art { background: var(--roasted-bean); color: var(--text-primary); }
+.art-arrow { color: var(--toasted-tan); }
+.delivery-stamp { background: var(--deep-coffee-brown); border-color: var(--caramel-brown); }
+.visit { background: var(--dark-roast); }
+.branch-map { background: var(--roasted-bean); border-color: var(--coffee-brown); }
+footer { background: var(--espresso-black); color: var(--text-primary); }
+.footer-top p, .footer-bottom { color: var(--text-secondary); }
+.footer-bottom { border-top-color: var(--roasted-bean); }
+.social-link { background: var(--dark-roast); border-color: var(--caramel-brown); }
+.social-link:hover { background: var(--roasted-bean); border-color: var(--toasted-tan); }
+.mobile-bottom { background: #1B0404f5; border-top-color: var(--coffee-brown); }
+.mobile-bottom [data-cart-count] { background: var(--light-roast); color: var(--espresso-black); }
+
+.toast { background: var(--dark-roast); color: var(--text-primary); border-color: var(--caramel-brown); box-shadow: 0 12px 40px #1B040480; }
+.toast-icon { background: var(--light-roast); color: var(--espresso-black); }
+.toast-view { background: var(--espresso-black); border-color: var(--caramel-brown); }
+.modal { background: var(--dark-roast); color: var(--text-primary); box-shadow: 0 25px 80px #1B040480; }
+.modal::backdrop { background: #1B0404cc; }
+.modal-close { background: var(--espresso-black); border-color: var(--caramel-brown); }
+input:not([type=radio]), textarea { background: var(--espresso-black); border-color: var(--caramel-brown); color: var(--text-primary); }
+.choices label { border-color: var(--caramel-brown); }
+.choices label:has(input:checked) { background: var(--roasted-bean); border-color: var(--toasted-tan); }
+.summary, .location-card { background: var(--roasted-bean); border-color: var(--caramel-brown); }
+.summary small, .location-card small { color: var(--text-primary); }
+.success-icon { background: var(--light-roast); color: var(--espresso-black); }
+.error { background: var(--roasted-bean); color: var(--light-roast) !important; border-color: var(--caramel-brown); }
+.location-map { background: var(--roasted-bean); border-color: var(--caramel-brown); }
+.location-map:empty { background: repeating-linear-gradient(35deg, #532416 0, #532416 25px, #703922 25px, #703922 26px); }
+.customer-pin > span { background: var(--roasted-bean); border-color: var(--light-roast); box-shadow: 0 3px 10px #1B040499; }
+.customer-pin > span::after { background: var(--light-roast); }
+
+@media (max-width: 580px) {
+  .hero-shade { background: linear-gradient(180deg, #1B0404d1 0%, #360E0A70 58%, #1B0404a6 100%); }
+}

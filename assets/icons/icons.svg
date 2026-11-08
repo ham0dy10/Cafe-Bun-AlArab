@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="cart" viewBox="0 0 24 24">
+    <path d="M2.5 3.5H5l2.4 11.3a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6l1.4-7.3H6"/>
+    <circle cx="9.5" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/>
+  </symbol>
+  <symbol id="menu" viewBox="0 0 24 24">
+    <rect x="2" y="3" width="10" height="18" rx="1.8"/><rect x="12" y="3" width="10" height="18" rx="1.8"/><path d="M4.5 7h5L7 12.5 4.5 7ZM7 12.5V17m-1.7 0h3.4M15 7.5h4M15 10h4M15 13h4M15 15.5h4M15 18h4"/>
+  </symbol>
+  <symbol id="map-pin" viewBox="0 0 24 24">
+    <path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/>
+    <circle cx="12" cy="10" r="2.7"/>
+  </symbol>
+  <symbol id="store" viewBox="0 0 24 24">
+    <path d="m3 9 2-6h14l2 6M4 12v9h16v-9M9 21v-7h6v7M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 3v6m6-6v6"/>
+  </symbol>
+</svg>
