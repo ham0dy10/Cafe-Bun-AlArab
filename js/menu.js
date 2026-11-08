@@ -12,7 +12,7 @@
       .replace(/[\s()+-]/g, '');
     if (phone.startsWith('00')) phone = phone.slice(2);
     if (/^07[3-9]\d{8}$/.test(phone)) phone = '964' + phone.slice(1);
-    if (!/^[1-9]\d{7,14}$/.test(phone)) throw new Error('رقم واتساب المحل غير صحيح. اكتب رقمك المحلي مثل 07717777647 أو الدولي مثل 9647717777647.');
+    if (!/^[1-9]\d{7,14}$/.test(phone)) throw new Error('رقم واتساب المحل غير صحيح. اكتب رقمك المحلي مثل 07761810425 أو الدولي مثل 9647761810425.');
     return phone;
   }
 
@@ -37,7 +37,7 @@
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 12000);
     try {
-      const response = await fetch('data/menu.json', {signal: controller.signal, cache: 'no-store'});
+      const response = await fetch('data/menu.json?v=20261108-iphone-01', {signal: controller.signal, cache: 'no-store'});
       if (!response.ok) throw new Error('تعذر تحميل المنيو. جرّب مرة ثانية.');
       return validate(await response.json());
     } catch (error) {
@@ -65,14 +65,14 @@
     grid.innerHTML = shown.map((p, i) => {
       const e = app.escape;
       const disabled = !app.Cart.orderable(p) || !orderingOpen;
-      return `<article class="product"><button class="product-image" data-details="${e(p.id)}" aria-label="تفاصيل ${e(p.name)}"><img src="${e(p.image)}" alt="${e(p.name)}" loading="lazy" width="400" height="420"><span class="product-number">${String(i + 1).padStart(2, '0')}</span>${!p.available ? '<span class="badge">غير متوفر حالياً</span>' : ''}<span class="image-arrow" aria-hidden="true">↖</span></button><div class="product-category">${e(p.category)}</div><h3><button data-details="${e(p.id)}">${e(p.name)}</button></h3><div class="product-foot"><span class="${p.price === null ? 'pending-price' : ''}">${e(app.money(p.price))}</span><button class="plus" data-add="${e(p.id)}" aria-label="أضف ${e(p.name)}" ${disabled ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16M4 12h16"/></svg></button><span class="product-cart-quantity" data-product-count="${e(p.id)}" ${quantityFor(p.id) ? '' : 'hidden'}>في سلتك: <b>${quantityFor(p.id)}</b></span></div></article>`;
+      return `<article class="product"><button class="product-image" data-details="${e(p.id)}" aria-label="تفاصيل ${e(p.name)}"><img src="${e(p.image)}" alt="${e(p.name)}" loading="lazy" width="400" height="420"><span class="product-number">${String(i + 1).padStart(2, '0')}</span>${!p.available ? '<span class="badge">غير متوفر حالياً</span>' : ''}<span class="image-arrow" aria-hidden="true"><svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></span></button><div class="product-category">${e(p.category)}</div><h3><button data-details="${e(p.id)}">${e(p.name)}</button></h3><div class="product-foot"><span class="${p.price === null ? 'pending-price' : ''}">${e(app.money(p.price))}</span><button class="plus" data-add="${e(p.id)}" aria-label="أضف ${e(p.name)}" ${disabled ? 'disabled' : ''}><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16M4 12h16"/></svg></button><span class="product-cart-quantity" data-product-count="${e(p.id)}" ${quantityFor(p.id) ? '' : 'hidden'}>في سلتك: <b>${quantityFor(p.id)}</b></span></div></article>`;
     }).join('');
     const state = document.getElementById('menu-state');
     state.textContent = !orderingOpen ? 'استقبال الطلبات متوقف مؤقتاً. تگدر تتصفح المنيو.' : !filtered.length ? 'ما لگينا صنف بهذا الاسم.' : '';
     state.hidden = !state.textContent;
     const all = document.getElementById('show-all');
     all.hidden = expanded || filtered.length <= 8;
-    all.textContent = `شوف كل المنيو (${filtered.length}) ↓`;
+    all.innerHTML = `شوف كل المنيو (${filtered.length}) <svg class="arrow-icon arrow-down" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg>`;
     const note = document.getElementById('menu-note');
     note.textContent = products.some(p => p.price === null) ? 'بعض الأسعار قيد التحديث. يتاح طلب الصنف بعد اعتماد سعره. الصور الحالية توضيحية.' : 'الصور الحالية توضيحية لحين إضافة صور المنتجات النهائية.';
     note.hidden = false;
