@@ -1,90 +1,180 @@
 <!doctype html>
+
 <html lang="ar" dir="rtl">
+
 <head>
+
   <meta charset="utf-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <meta name="theme-color" content="#1B0404">
+
   <meta name="description" content="بُن العَرب في الفلوجة. اكتشف المنيو، اختار توصيل أو استلام، وأرسل طلبك وموقعك عبر واتساب.">
+
   <title>بُن العَرب | تجربة ألوان القهوة</title>
+
   <link rel="icon" href="assets/images/logo-icon.png" type="image/png">
+
   <link rel="preload" href="assets/fonts/lionsys-reqa-regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="css/style.css?v=20261108-07">
-  <link rel="stylesheet" href="css/palette-trial.css?v=20261108-07">
-  <script defer src="js/menu.js?v=20261108-07"></script>
-  <script defer src="js/cart.js?v=20261108-07"></script>
-  <script defer src="js/whatsapp.js?v=20261108-07"></script>
-  <script defer src="js/main.js?v=20261108-07"></script>
+
+  <link rel="stylesheet" href="css/style.css?v=20261108-iphone-01">
+
+  <link rel="stylesheet" href="css/palette-trial.css?v=20261108-iphone-01">
+
+  <script defer src="js/menu.js?v=20261108-iphone-01"></script>
+
+  <script defer src="js/cart.js?v=20261108-iphone-01"></script>
+
+  <script defer src="js/whatsapp.js?v=20261108-iphone-01"></script>
+
+  <script defer src="js/main.js?v=20261108-iphone-01"></script>
+
 </head>
+
 <body>
+
   <a class="skip-link" href="#menu">انتقل للمنيو</a>
+
   <header class="site-header">
+
     <a href="#" class="brand-logo" aria-label="بُن العَرب، الصفحة الرئيسية"><img src="assets/images/logo.webp" alt="لوغو بُن العَرب" width="96" height="96"></a>
+
     <nav aria-label="التنقل الرئيسي"><a href="#menu">المنيو</a><a href="#story">حكايتنا</a><a href="#delivery">التوصيل</a><a href="#visit">زورنا</a></nav>
+
     <button class="bag" data-open-cart aria-label="افتح سلة الطلب" title="السلة"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 3.5H5l2.4 11.3a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6l1.4-7.3H6"/> <circle cx="9.5" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg><b data-cart-count hidden>0</b></button>
+
   </header>
+
   <main>
+
     <section class="hero" aria-labelledby="hero-title">
+
       <img src="assets/images/hero.webp" alt="فنجان قهوة وحلويات بأجواء دافئة، صورة تعبيرية" fetchpriority="high" width="1600" height="900">
+
       <div class="hero-shade"></div>
+
       <div class="hero-copy"><div class="overline"><span></span> بُن العَرب · الفلوجة</div>
+
         <h1 id="hero-title"><span>للقهوة أهلها.</span><span>وللمزاج <em>مكانه.</em></span></h1>
+
         <p><span data-tagline>قهوة مختصة ومشروبات بطعم مختلف</span><br>تفاصيل صغيرة، تسوّي فرق بيومك.</p>
-        <div class="hero-actions"><a class="btn light" href="#menu">اكتشف المنيو <span aria-hidden="true">↖</span></a><a class="hero-visit" href="#visit">خلّها على قهوة <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg></a></div>
+
+        <div class="hero-actions"><a class="btn light" href="#menu">اكتشف المنيو <span aria-hidden="true"><svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></span></a><a class="hero-visit" href="#visit">خلّها على قهوة <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg></a></div>
+
       </div>
-      <div class="hero-bottom"><span lang="en" dir="ltr">CRAFTED FOR YOUR MOMENTS</span><a href="#menu">خذ وقتك ↓</a><span>قهوة. لَمّة. لحظة إلك.</span></div>
+
+      <div class="hero-bottom"><span lang="en" dir="ltr">CRAFTED FOR YOUR MOMENTS</span><a href="#menu">خذ وقتك <svg class="arrow-icon arrow-down" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></a><span>قهوة. لَمّة. لحظة إلك.</span></div>
+
       <span class="image-credit">صورة تعبيرية للهوية</span>
+
     </section>
+
     <div class="ribbon" aria-hidden="true"><span>قهوة بطعم مختلف</span><i>✳</i><span>توصيل لبابك</span><i>✳</i><span>لحظتك، على ذوقك</span><i>✳</i><span>بُن العَرب</span></div>
-    <section class="intro wrap" id="story" aria-labelledby="story-title"><span class="section-no">01 / الحكاية</span><div><span class="eyebrow" lang="en">A LITTLE COFFEE. A LOT OF FEELING.</span><h2 id="story-title">مو بس فنجان.<br>هي اللحظة <em>اللي تحتاجها.</em></h2></div><div class="intro-text"><img class="story-photo" src="assets/images/story-cup-cutout.webp" alt="فنجان إسبريسو خزفي بلون رملي مع صحنه" width="540" height="405" loading="lazy" decoding="async"><p>لأول صباح، لاستراحة بنص اليوم، وللمة اللي تطول. اختار قهوتك، زيد وياها شي حلو، وخلي يومك يمشي على رواق.</p><a href="#menu" class="text-link">شوف شنو يناسب مزاجك ↖</a></div></section>
+
+    <section class="intro wrap" id="story" aria-labelledby="story-title"><span class="section-no">01 / الحكاية</span><div><span class="eyebrow" lang="en">A LITTLE COFFEE. A LOT OF FEELING.</span><h2 id="story-title">مو بس فنجان.<br>هي اللحظة <em>اللي تحتاجها.</em></h2></div><div class="intro-text"><img class="story-photo" src="assets/images/story-cup-cutout.webp" alt="فنجان إسبريسو خزفي بلون رملي مع صحنه" width="540" height="405" loading="lazy" decoding="async"><p>لأول صباح، لاستراحة بنص اليوم، وللمة اللي تطول. اختار قهوتك، زيد وياها شي حلو، وخلي يومك يمشي على رواق.</p><a href="#menu" class="text-link">شوف شنو يناسب مزاجك <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></a></div></section>
+
     <section class="menu-section" id="menu" aria-labelledby="menu-title"><div class="wrap">
+
       <div class="section-top"><div><span class="section-no">02 / المنيو</span><h2 id="menu-title">شنو <em>مزاجك اليوم؟</em></h2><p>من أول رشفة، لآخر لقمة.</p></div><label class="search"><span aria-hidden="true">⌕</span><input id="menu-search" type="search" placeholder="دوّر على شي تحبه…" aria-label="البحث بالمنيو" maxlength="100"></label></div>
+
       <div class="tabs" id="menu-categories" role="group" aria-label="أقسام المنيو"></div>
+
       <p class="menu-note" id="menu-note" hidden>الأسعار قيد التحديث. يتاح طلب الصنف بعد اعتماد سعره. الصور توضيحية لحين إضافة صور المنتجات.</p>
+
       <p id="menu-state" class="empty" role="status">نحضّر المنيو…</p>
+
       <button id="retry-menu" class="btn outline" hidden>إعادة تحميل المنيو</button>
+
       <div class="products" id="menu-products"></div>
-      <button id="show-all" class="btn outline view-all" hidden>شوف كل المنيو ↓</button>
+
+      <button id="show-all" class="btn outline view-all" hidden>شوف كل المنيو <svg class="arrow-icon arrow-down" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 4v16m-6-6 6 6 6-6"/></svg></button>
+
       <noscript><p class="error">فعّل JavaScript حتى يظهر المنيو وتگدر تجهّز طلبك.</p></noscript>
+
     </div></section>
-    <section class="delivery wrap" id="delivery" aria-labelledby="delivery-title"><div class="delivery-art" aria-hidden="true"><span class="art-arrow">↗</span><span lang="en" dir="ltr">YOUR COFFEE,<br><i>wherever you are.</i></span><span class="delivery-stamp">بُن العَرب<br>يوصلك</span></div><div class="delivery-copy"><span class="section-no">03 / على راحتك</span><h2 id="delivery-title">مزاجك الحلو،<br><em>لحد بابك.</em></h2><p>اختار من المنيو، حدّد عنوانك على الخريطة، وأرسل طلبك عبر واتساب. أو مرّ علينا واستلم قهوتك بنفسك.</p><div class="delivery-benefits"><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg> توصيل <b data-delivery-fee>2,000 د.ع</b></span><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 2-6h14l2 6M4 12v9h16v-9M9 21v-7h6v7M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 3v6m6-6v6"/></svg> استلام من المحل</span><span>✓ دفع عند الاستلام</span></div><div class="delivery-actions"><a href="#menu" class="btn burgundy">جهّز طلبك ↖</a></div><p id="delivery-location-status" class="location-summary" role="status"></p><small>الطلب يتأكد بعد رد فريق المحل على واتساب.</small></div></section>
-    <section class="visit" id="visit" aria-labelledby="visit-title"><div class="wrap visit-grid"><div><span class="section-no">04 / نلتقي هنا</span><h2 id="visit-title">قهوة قريبة.<br><em>ولمّة أحلى.</em></h2><p class="address" data-store-address>الفلوجة — شارع الثرثار — مجاور الصيدلية المركزية</p><section class="opening-hours" aria-labelledby="opening-hours-title"><h3 id="opening-hours-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>ساعات العمل</h3><p id="store-hours">قيد التحديث</p></section><div class="visit-links"><a class="btn burgundy" data-branch-link href="https://maps.app.goo.gl/Ja2ZMMKmgqYroK3o6" target="_blank" rel="noopener noreferrer">دلّيني على الفرع ↖</a><a class="phone-link" data-store-phone href="tel:07717777647" dir="ltr">07717777647</a></div></div><div class="branch-map"><button type="button" id="load-branch-map" class="map-preview" aria-controls="branch-map"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.7"/></svg><span>اعرض موقع بُن العرب على الخريطة</span><small data-store-address>الفلوجة — شارع الثرثار</small></button><iframe id="branch-map" title="موقع فرع بُن العَرب" referrerpolicy="no-referrer-when-downgrade" hidden></iframe></div></div></section>
+
+    <section class="delivery wrap" id="delivery" aria-labelledby="delivery-title"><div class="delivery-art" aria-hidden="true"><span class="art-arrow"><svg class="arrow-icon arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M7 5h12v12"/></svg></span><span lang="en" dir="ltr">YOUR COFFEE,<br><i>wherever you are.</i></span><span class="delivery-stamp">بُن العَرب<br>يوصلك</span></div><div class="delivery-copy"><span class="section-no">03 / على راحتك</span><h2 id="delivery-title">مزاجك الحلو،<br><em>لحد بابك.</em></h2><p>اختار من المنيو، حدّد عنوانك على الخريطة، وأرسل طلبك عبر واتساب. أو مرّ علينا واستلم قهوتك بنفسك.</p><div class="delivery-benefits"><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg> توصيل <b data-delivery-fee>2,000 د.ع</b></span><span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 2-6h14l2 6M4 12v9h16v-9M9 21v-7h6v7M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 3v6m6-6v6"/></svg> استلام من المحل</span><span>✓ دفع عند الاستلام</span></div><div class="delivery-actions"><a href="#menu" class="btn burgundy">جهّز طلبك <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></a></div><p id="delivery-location-status" class="location-summary" role="status"></p><small>الطلب يتأكد بعد رد فريق المحل على واتساب.</small></div></section>
+
+    <section class="visit" id="visit" aria-labelledby="visit-title"><div class="wrap visit-grid"><div><span class="section-no">04 / نلتقي هنا</span><h2 id="visit-title">قهوة قريبة.<br><em>ولمّة أحلى.</em></h2><p class="address" data-store-address>الفلوجة — شارع الثرثار — مجاور الصيدلية المركزية</p><section class="opening-hours" aria-labelledby="opening-hours-title"><h3 id="opening-hours-title"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>ساعات العمل</h3><p id="store-hours">قيد التحديث</p></section><div class="visit-links"><a class="btn burgundy" data-branch-link href="https://maps.app.goo.gl/Ja2ZMMKmgqYroK3o6" target="_blank" rel="noopener noreferrer">دلّيني على الفرع <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></a><a class="phone-link" data-store-phone href="tel:07761810425" dir="ltr">07761810425</a></div></div><div class="branch-map"><button type="button" id="load-branch-map" class="map-preview" aria-controls="branch-map"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.7"/></svg><span>اعرض موقع بُن العرب على الخريطة</span><small data-store-address>الفلوجة — شارع الثرثار</small></button><iframe id="branch-map" title="موقع فرع بُن العَرب" referrerpolicy="no-referrer-when-downgrade" hidden></iframe></div></div></section>
+
   </main>
+
   <footer><div class="wrap footer-top"><a href="#" class="brand-logo footer-logo" aria-label="بُن العَرب، الصفحة الرئيسية"><img src="assets/images/logo.webp" alt="لوغو بُن العَرب" width="96" height="96" loading="lazy"></a><p>للقهوة أهلها. وللمزاج مكانه.</p><a class="social-link" href="https://www.instagram.com/alarabcoffe/" target="_blank" rel="noopener noreferrer" aria-label="إنستغرام بُن العَرب" title="إنستغرام بُن العَرب"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg></a></div><div class="wrap footer-bottom"><span>© <span id="year">2026</span> بُن العَرب</span><button type="button" class="developer-trigger" data-open-developer aria-haspopup="dialog" aria-controls="developer-dialog">عن المطوّر</button><span>قهوة مختصة · الفلوجة</span></div></footer>
+
   <nav class="mobile-bottom" aria-label="روابط سريعة"><a href="#menu" aria-label="المنيو" title="المنيو"><svg class="icon menu-book-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2" y="3" width="10" height="18" rx="1.8"/><rect x="12" y="3" width="10" height="18" rx="1.8"/><path d="M4.5 7h5L7 12.5 4.5 7ZM7 12.5V17m-1.7 0h3.4M15 7.5h4M15 10h4M15 13h4M15 15.5h4M15 18h4"/></svg></a><a data-branch-link href="https://maps.app.goo.gl/Ja2ZMMKmgqYroK3o6" target="_blank" rel="noopener noreferrer" aria-label="موقع الكافيه" title="موقع الكافيه"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg></a><button data-open-cart aria-label="سلة الطلب" title="السلة"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 3.5H5l2.4 11.3a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6l1.4-7.3H6"/> <circle cx="9.5" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg><span class="cart-badge" data-cart-count hidden>0</span></button></nav>
+
   <div class="toast" id="toast" role="status" aria-live="polite" aria-atomic="true" hidden><span class="toast-icon" id="toast-success" aria-hidden="true" hidden>✓</span><div class="toast-copy"><strong id="toast-title"></strong><span id="toast-message"></span></div><button type="button" class="toast-view" id="toast-view" data-open-cart hidden>عرض السلة</button></div>
+
+
 
   <dialog id="product-dialog" class="modal" aria-labelledby="product-title" aria-describedby="product-description product-dismiss-hint"><img id="product-image" class="detail-img" alt="" decoding="async"><div class="modal-body"><span id="product-category" class="eyebrow"></span><h2 id="product-title"></h2><p id="product-description"></p><div id="product-price" class="detail-price"></div><div class="product-quantity"><span>الكمية</span><div class="qty" data-product-quantity><button type="button" id="product-increase" aria-label="زيادة الكمية">+</button><output id="product-quantity" aria-live="polite">1</output><button type="button" id="product-decrease" aria-label="تقليل الكمية">−</button></div></div><button id="product-add" class="btn burgundy full">أضف إلى طلبك +</button><p id="product-dismiss-hint" class="product-dismiss-hint">اضغط خارج الأزرار للرجوع</p></div></dialog>
 
+
+
   <dialog id="cart-dialog" class="modal" aria-labelledby="cart-title"><div class="modal-body">
-    <section id="cart-step"><button type="button" class="back-link dialog-return" data-close-dialog>→ متابعة التصفح</button><span class="eyebrow" lang="en">YOUR GOOD TASTE</span><h2 id="cart-title">اختياراتك الحلوة.</h2><div id="cart-lines"></div><nav id="cart-pagination" class="pagination" aria-label="صفحات السلة" hidden><button type="button" id="cart-previous">السابق</button><span id="cart-page" aria-live="polite"></span><button type="button" id="cart-next">التالي</button></nav><div id="cart-empty" class="empty"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 3.5H5l2.4 11.3a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6l1.4-7.3H6"/> <circle cx="9.5" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg><p>طلبك بعده ينتظر ذوقك.</p><button class="btn burgundy" id="browse-menu">شوف المنيو</button></div><div id="cart-summary" hidden><div class="total"><span>مجموع الأصناف</span><b id="cart-subtotal"></b></div><small>أجور التوصيل تُضاف بالخطوة التالية.</small><button class="btn burgundy full" id="go-checkout">إكمال الطلب ↖</button></div></section>
-    <section id="checkout-step" hidden><button class="back-link" id="back-to-cart">→ الرجوع للسلة</button><span class="eyebrow" lang="en">ONE LAST LITTLE STEP</span><h2 id="checkout-title">وين نوصّل مزاجك؟</h2><p id="checkout-progress" class="step-progress" aria-live="polite"></p><form id="checkout-form" novalidate><div id="checkout-contact" data-checkout-panel="contact">
+
+    <section id="cart-step"><button type="button" class="back-link dialog-return" data-close-dialog><svg class="arrow-icon arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg> متابعة التصفح</button><span class="eyebrow" lang="en">YOUR GOOD TASTE</span><h2 id="cart-title">اختياراتك الحلوة.</h2><div id="cart-lines"></div><nav id="cart-pagination" class="pagination" aria-label="صفحات السلة" hidden><button type="button" id="cart-previous">السابق</button><span id="cart-page" aria-live="polite"></span><button type="button" id="cart-next">التالي</button></nav><div id="cart-empty" class="empty"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2.5 3.5H5l2.4 11.3a2 2 0 0 0 2 1.6h8.7a2 2 0 0 0 2-1.6l1.4-7.3H6"/> <circle cx="9.5" cy="20" r="1.25"/><circle cx="18" cy="20" r="1.25"/></svg><p>طلبك بعده ينتظر ذوقك.</p><button class="btn burgundy" id="browse-menu">شوف المنيو</button></div><div id="cart-summary" hidden><div class="total"><span>مجموع الأصناف</span><b id="cart-subtotal"></b></div><small>أجور التوصيل تُضاف بالخطوة التالية.</small><button class="btn burgundy full" id="go-checkout">إكمال الطلب <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></button></div></section>
+
+    <section id="checkout-step" hidden><button class="back-link" id="back-to-cart"><svg class="arrow-icon arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg> الرجوع للسلة</button><span class="eyebrow" lang="en">ONE LAST LITTLE STEP</span><h2 id="checkout-title">وين نوصّل مزاجك؟</h2><p id="checkout-progress" class="step-progress" aria-live="polite"></p><form id="checkout-form" novalidate><div id="checkout-contact" data-checkout-panel="contact">
+
       <fieldset class="choices"><legend class="sr-only">طريقة الاستلام</legend><label><input type="radio" name="fulfillment" value="delivery" checked><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg> توصيل</label><label><input type="radio" name="fulfillment" value="pickup"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m3 9 2-6h14l2 6M4 12v9h16v-9M9 21v-7h6v7M3 9a3 3 0 0 0 6 0 3 3 0 0 0 6 0 3 3 0 0 0 6 0M9 3v6m6-6v6"/></svg> استلام من المحل</label></fieldset>
+
       <div class="contact-fields"><label>اسمك<input name="name" required minlength="2" maxlength="80" autocomplete="name"></label>
+
       <label>رقم الهاتف<input name="phone" type="tel" dir="ltr" inputmode="tel" placeholder="07712345678" required maxlength="20" autocomplete="tel"></label></div></div>
-      <div id="delivery-fields" data-checkout-panel="address" hidden><label>عنوان التوصيل أو أقرب نقطة دالة<textarea name="address" required minlength="5" maxlength="400" autocomplete="street-address" placeholder="المنطقة، الشارع، أقرب نقطة دالة"></textarea></label><div class="location-card"><div><b>موقعك على الخريطة</b><small id="checkout-location-status">أضف موقعك حتى يوصل الطلب بسهولة.</small></div><button type="button" class="btn outline" data-open-location>تحديد الموقع <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg></button><a id="checkout-location-link" target="_blank" rel="noopener noreferrer" hidden>عرض الموقع المختار ↖</a><button type="button" class="text-link" id="remove-location" hidden>حذف الموقع من الطلب</button></div></div>
+
+      <div id="delivery-fields" data-checkout-panel="address" hidden><label>عنوان التوصيل أو أقرب نقطة دالة<textarea name="address" required minlength="5" maxlength="400" autocomplete="street-address" placeholder="المنطقة، الشارع، أقرب نقطة دالة"></textarea></label><div class="location-card"><div><b>موقعك على الخريطة</b><small id="checkout-location-status">أضف موقعك حتى يوصل الطلب بسهولة.</small></div><button type="button" class="btn outline" data-open-location>تحديد الموقع <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg></button><a id="checkout-location-link" target="_blank" rel="noopener noreferrer" hidden>عرض الموقع المختار <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></a><button type="button" class="text-link" id="remove-location" hidden>حذف الموقع من الطلب</button></div></div>
+
       <div id="checkout-review" data-checkout-panel="review" hidden><label>ملاحظات <small>اختياري</small><textarea name="notes" maxlength="500" placeholder="أي شي تحب نعرفه عن طلبك"></textarea></label>
+
       <div class="summary"><div><span>الأصناف</span><b id="checkout-subtotal"></b></div><div><span>التوصيل</span><b id="checkout-fee"></b></div><div class="total"><span>المجموع</span><b id="checkout-total"></b></div><small>الدفع عند الاستلام. تأكيد الطلب يكون بعد رد المحل.</small></div>
-      </div><p id="checkout-error" class="error" role="alert" hidden></p><button class="btn burgundy full" type="button" id="checkout-next">التالي ←</button><button class="btn burgundy full" id="checkout-submit" type="submit" hidden>تجهيز الطلب لواتساب ↖</button>
+
+      </div><p id="checkout-error" class="error" role="alert" hidden></p><button class="btn burgundy full" type="button" id="checkout-next">التالي <svg class="arrow-icon arrow-left" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 12H4m6-6-6 6 6 6"/></svg></button><button class="btn burgundy full" id="checkout-submit" type="submit" hidden>تجهيز الطلب لواتساب <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></button>
+
     </form></section>
-    <section id="whatsapp-step" class="success" hidden><button type="button" class="back-link dialog-return" data-close-dialog>→ الرجوع للموقع</button><h2 id="whatsapp-title">طلبك جاهز للإرسال.</h2><p>افتح واتساب وأرسل الرسالة للمحل حتى يؤكد طلبك.</p><div class="message-label">رسالة الطلب<pre id="whatsapp-preview" aria-live="polite"></pre></div><nav class="pagination" id="message-pagination" aria-label="صفحات رسالة الطلب"><button type="button" id="message-previous">السابق</button><span id="message-page"></span><button type="button" id="message-next">التالي</button></nav><div class="whatsapp-actions"><a id="whatsapp-send" class="btn burgundy full" target="_blank" rel="noopener noreferrer">فتح واتساب بالطلب ↖</a><button class="btn outline full" id="edit-order">تعديل التفاصيل</button></div><button class="text-link" id="clear-order">تفريغ السلة وبدء طلب جديد</button><small>فتح واتساب وحده ما يعني تم إرسال الطلب. السلة تبقى عندك لحد ما تفرّغها.</small></section>
+
+    <section id="whatsapp-step" class="success" hidden><button type="button" class="back-link dialog-return" data-close-dialog><svg class="arrow-icon arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg> الرجوع للموقع</button><h2 id="whatsapp-title">طلبك جاهز للإرسال.</h2><p>افتح واتساب وأرسل الرسالة للمحل حتى يؤكد طلبك.</p><div class="message-label">رسالة الطلب<pre id="whatsapp-preview" aria-live="polite"></pre></div><nav class="pagination" id="message-pagination" aria-label="صفحات رسالة الطلب"><button type="button" id="message-previous">السابق</button><span id="message-page"></span><button type="button" id="message-next">التالي</button></nav><div class="whatsapp-actions"><a id="whatsapp-send" class="btn burgundy full" target="_blank" rel="noopener noreferrer">فتح واتساب بالطلب <svg class="arrow-icon arrow-nw" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 19 5 5M5 17V5h12"/></svg></a><button class="btn outline full" id="edit-order">تعديل التفاصيل</button></div><button class="text-link" id="clear-order">تفريغ السلة وبدء طلب جديد</button><small>فتح واتساب وحده ما يعني تم إرسال الطلب. السلة تبقى عندك لحد ما تفرّغها.</small></section>
+
   </div></dialog>
+
+
 
   <dialog id="location-dialog" class="modal location-modal" aria-labelledby="location-title"><div class="modal-body"><span class="eyebrow" lang="en">RIGHT TO YOUR DOOR</span><h2 id="location-title">دلّينا على مكانك.</h2><p>المس مكانك على الخريطة، أو اسحب العلامة للمكان الأدق.</p><button class="btn outline full" id="locate-me" type="button"><span id="locate-me-label">استخدم موقعي الحالي</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0Z"/> <circle cx="12" cy="10" r="2.7"/></svg></button><p id="location-feedback" class="location-feedback" role="status" aria-live="polite">حمّل الخريطة وحدّد مكانك.</p><div id="location-map" class="location-map" role="region" aria-label="خريطة اختيار مكان التوصيل. حرّك الخريطة بالأسهم واضغط Enter لاختيار المركز."></div><small class="map-keyboard-hint">بالكيبورد: حرّك الخريطة بالأسهم، واضغط Enter لتحديد مركزها.</small><details class="coordinate-details"><summary>تحديد المكان بالإحداثيات</summary><p>تگدر تكتب إحداثيات المكان إذا تعرفها.</p><div class="coordinate-fields"><label>خط العرض<input id="location-lat" type="number" step="any" min="-85" max="85" dir="ltr" placeholder="33.357381"></label><label>خط الطول<input id="location-lng" type="number" step="any" min="-180" max="180" dir="ltr" placeholder="43.786479"></label></div><button class="btn outline" id="apply-coordinates" type="button">حدد هالمكان</button></details><p id="selected-coordinates" class="coordinate-output" dir="ltr" hidden></p><div class="location-actions"><button id="confirm-location" class="btn burgundy full" disabled>اعتماد هذا الموقع ✓</button><button class="btn outline full" data-close-dialog type="button">رجوع بدون تغيير</button></div><small class="privacy-note">الموقع اللي تعتمده ينضاف لرسالة الطلب فقط. ما نخزّن اسمك أو رقمك أو موقعك بالمتصفح.</small></div></dialog>
 
+
+
   <dialog id="developer-dialog" class="modal developer-modal" aria-labelledby="developer-title" aria-describedby="developer-bio">
+
     
+
     <div class="modal-body developer-content">
+
       <p class="developer-kicker">عن المطوّر</p>
+
       <h2 id="developer-title" class="developer-name" lang="en" dir="ltr">Mohammed</h2>
+
       <p class="developer-role">مطوّر مواقع وتطبيقات</p>
+
       <p id="developer-bio" class="developer-bio">صمّمت وطوّرت موقع <strong>بُن العرب</strong> حتى تكون تجربة تصفّح المنيو وطلب القهوة والمشروبات سهلة وسريعة، من اختيار مشروبك إلى تجهيز طلبك وإرساله عبر واتساب.</p>
+
       <a class="developer-instagram" href="https://www.instagram.com/hamody._10/" target="_blank" rel="noopener noreferrer" aria-label="إنستغرام المطوّر Mohammed: hamody._10">
+
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.5" cy="6.7" r="1" fill="currentColor" stroke="none"/></svg>
+
         <span dir="ltr">@hamody._10</span>
-        <span class="developer-external" aria-hidden="true">↗</span>
+
+        <span class="developer-external" aria-hidden="true"><svg class="arrow-icon arrow-ne" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19 19 5M7 5h12v12"/></svg></span>
+
       </a>
+
       <p class="product-dismiss-hint">اضغط بأي مكان للرجوع</p>
+
     </div>
+
   </dialog>
+
 </body>
+
 </html>
+
