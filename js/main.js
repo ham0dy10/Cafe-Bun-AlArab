@@ -178,7 +178,7 @@
     $('checkout-title').textContent = checkoutTitles[panel];
     const steps = mode() === 'delivery' ? ['contact', 'address', 'review'] : ['contact', 'review'];
     $('checkout-progress').textContent = `الخطوة ${steps.indexOf(panel) + 1} من ${steps.length}`;
-    $('back-to-cart').textContent = panel === 'contact' ? '→ الرجوع للسلة' : '→ الخطوة السابقة';
+    $('back-to-cart').innerHTML = panel === 'contact' ? '<svg class="arrow-icon arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg> الرجوع للسلة' : '<svg class="arrow-icon arrow-right" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h16m-6-6 6 6-6 6"/></svg> الخطوة السابقة';
     $('checkout-next').hidden = panel === 'review';
     $('checkout-submit').hidden = panel !== 'review';
     $('checkout-error').hidden = true;
